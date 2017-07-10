@@ -1,0 +1,151 @@
+/*
+FOR SOLUTION
+*/
+
+
+/* CSS clip */
+
+.clip-always,
+.clip,
+#skiptocontent a {
+  position: absolute;
+  left: -9999px;
+  height: 0;
+  width: 0;
+}
+
+.clip:focus,
+#skiptocontent a:focus {
+  position: relative;
+  left: 0;
+}
+
+.ajax-item:hover,
+.ajax-item.hovering {
+  background-color: #eaeaea;
+}
+
+.ajax-item.hovering {
+  background-color: #eaeaea;
+}
+
+.ajax-item.hovering a {
+  color: black;
+}
+
+
+/* ---------------------------------------------------------------------------------- */
+
+
+/*
+FOR DEMO ONLY
+*/
+
+body {
+  background: #f5f5f5;
+  font-family: sans-serif;
+  font-weight: 300;
+  margin: 0;
+}
+
+a {
+  color: #455aad;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+h1 {
+  margin: 4px 20px;
+  display: inline-block;
+}
+
+.header-wrap {
+  height: 45px;
+  position: relative;
+  border: 1px solid lightgrey;
+  background: #fefefe;
+}
+
+.nav-list {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav-list ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+.nav-list ul li {
+  display: inline-block;
+  width: auto;
+  padding-right: 30px;
+}
+
+.nav-list ul li p {
+  margin: 0;
+}
+
+.ajax-item {
+  transition: background 0.3s ease-in-out;
+  -webkit-transition: background 0.3s ease-in-out;
+  border: 1px solid lightgrey;
+  margin-bottom: 20px;
+  display: flex;
+  background: white;
+}
+
+.ajax-item .item-info {
+  padding: 0 20px 5px;
+  line-height: 21px;
+}
+
+.ajax-item .item-image {
+  background-size: cover;
+  background-position: center;
+  width: 400px;
+  display: inline-block;
+}
+
+.ajax-item p {
+  margin-top: 0;
+}
+
+#headercontainer header {
+  padding: 10px 0;
+}
+
+#skiptocontent {
+  display: inline-block;
+}
+
+#skiptocontent a {
+  display: inline;
+}
+
+#maincontainer {
+  padding: 0 20px;
+}
+
+.load-trigger {
+  margin-right: 20px;
+  background-color: #455aad;
+  color: white;
+  border: 0;
+  border-radius: 2px;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.load-trigger:hover {
+  background-color: black;
+  cursor: pointer;
+}
